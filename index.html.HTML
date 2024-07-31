@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Digital Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        main {
+            flex: 1;
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            border-radius: 10px;
+            width: 200px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+        }
+
+        .product:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        .product h2 {
+            font-size: 1.5rem;
+            margin: 0.5rem 0;
+        }
+
+        .product p {
+            margin: 0.5rem 0;
+        }
+
+        .product button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .product button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .product-list {
+            animation: fadeIn 1s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Digital Store</h1>
+    </header>
+    <main>
+        <section class="product-list">
+            <div class="product">
+                <h2>Product 1</h2>
+                <p>Description of Product 1</p>
+                <p>Price: $10</p>
+                <button onclick="buyProduct('Product 1', 10)">Buy Now</button>
+            </div>
+            <div class="product">
+                <h2>Product 2</h2>
+                <p>Description of Product 2</p>
+                <p>Price: $15</p>
+                <button onclick="buyProduct('Product 2', 15)">Buy Now</button>
+            </div>
+            <!-- Add more products as needed -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Digital Store</p>
+    </footer>
+    <script>
+    function buyProduct(productName, price) {
+    alert('hello');
+    
+}
+   </script>
+</body>
+</html>
